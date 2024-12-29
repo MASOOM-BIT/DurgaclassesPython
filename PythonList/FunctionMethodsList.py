@@ -64,7 +64,9 @@ try:
 except IndexError as msg:
     print(msg)
 
-
+# clear : Truncate the list
+li1.clear()
+print(li1)
 
 
 
