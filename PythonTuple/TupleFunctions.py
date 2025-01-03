@@ -21,6 +21,10 @@ print(type(sorted(tup2))) #List : Tuple is immutable
 #5. MIN and MAX value --> works on Homogenous elements only
 print(min(tup2))
 print(max(tup2))
+Tup3 = 'Durga'
+print(max(Tup3))
+print(min(Tup3))
+
 
 
 
