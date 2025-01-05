@@ -44,3 +44,53 @@ except KeyError as msg:
 #7. dict.keys() : return Only keys
 
 print(d3.keys())
+
+#8. dict.values : return only all values
+print(d3.values())
+for x in d2.values():
+    print(x)
+
+#9. dicts.items() : it will return key-value pait n form if list of tuple [(k1,v1),(k2,v2)]
+
+print(d2.items()) #return type is dict_items
+
+for k,v in d2.items():
+    print(k,'-->',v)
+
+#10. dict1 = dict2.copy()
+# Dictionary d4
+d4 = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+}
+
+d5 = d4.copy()
+print(d4)
+print(d5)
+
+#11. dict.default(k,v) : If key is present return the value(do not update) and if key not present, add the value in dict
+#d[key]=values
+#d.setdefault(k,v)
+# Dictionary d6
+d6 = {
+    "animal": "Dog",
+    "breed": "Golden Retriever",
+    "age": 5
+}
+print(d6.setdefault('animal','many-Dogs'))
+print(d6.setdefault('work','Sleep'))
+print(d6)
+
+#12. d.update(x) : update one dict wit another dict, and it can be updated d.update([(k,v)])
+
+d5.update(d6)
+print(d5)
+
+d5.update([(777,'A')])
+print(d5)
+
+
+
+
+
