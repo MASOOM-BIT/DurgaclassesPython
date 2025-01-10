@@ -1,9 +1,20 @@
-'''Nameless function is called anonymous function. It is defined using lambda keyword. It can have any number of arguments but only one expression. It is used when we require a nameless function for a short period of time. It is also known as lambda function. It is defined using lambda keyword. It can have any number of arguments but only one expression. It is used when we require a nameless function for a short period of time. It is also known as lambda function. Syntax: lambda arguments: expression'''
+'''Nameless function is called anonymous function. 
+It is defined using lambda keyword. It can have any number of arguments 
+but only one expression. 
+It is used when we require a nameless function for a short period of time. 
+It is also known as lambda function. 
+It is defined using lambda keyword. 
+It can have any number of arguments but only one expression. 
+It is used when we require a nameless function for a short period of time. 
+It is also known as lambda function. Syntax: lambda arguments: expression'''
+
 #syntax : lambda arguments: expression
+
 #normal function
 def square1(x):
     return x*x
 print('Via Normal Fuction : ',square1(5))
+
 #lambda function
 square2 = lambda x: x*x
 print('Via Lambda Function : ',square2(5))
