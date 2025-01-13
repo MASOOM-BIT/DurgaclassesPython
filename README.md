@@ -1,4 +1,4 @@
-# README for Masoom Raza Aansari
+# Masoom Raza Aansari
 
 ## Overview
 Welcome to my README! I am **Masoom Raza Aansari**, a passionate **Full Stack Python Developer** with a strong mastery in **SQL**. My expertise lies in creating robust and scalable web applications, utilizing both front-end and back-end technologies.
