@@ -1,4 +1,5 @@
-def print_hi(n):
+
+'''def print_hi(n):
     print('l.acquire()')
     if n==0:
         result=1
@@ -10,5 +11,8 @@ def print_hi(n):
     return result
 
 if __name__ == '__main__':
-    print(print_hi(1))
+    print(print_hi(1))'''
+
+name = input('Enter your name:')
+print('Hello',name)
 
