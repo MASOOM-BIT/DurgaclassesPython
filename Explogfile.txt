@@ -1,0 +1,16 @@
+2025-01-24 01:48:10 - INFO - A new Request
+2025-01-24 01:48:22 - ERROR - division by zero
+Traceback (most recent call last):
+  File "c:\Users\HP\PycharmProjects\DurgaclassesPython\PythonLogs\logging_exceptions.py", line 17, in <module>
+    print(x/y)
+          ~^~
+ZeroDivisionError: division by zero
+2025-01-24 01:48:22 - INFO - Request Completed
+2025-01-24 01:48:27 - INFO - A new Request
+2025-01-24 01:48:37 - ERROR - invalid literal for int() with base 10: "'5'"
+Traceback (most recent call last):
+  File "c:\Users\HP\PycharmProjects\DurgaclassesPython\PythonLogs\logging_exceptions.py", line 16, in <module>
+    y=int(input("2nd No"))
+      ^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: "'5'"
+2025-01-24 01:48:37 - INFO - Request Completed
