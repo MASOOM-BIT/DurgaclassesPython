@@ -1,0 +1,4 @@
+Hello, this is a sample text file.
+You can add more lines as needed.
+This is the third line of the file.
+Have a great day!
