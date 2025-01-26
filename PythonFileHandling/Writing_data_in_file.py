@@ -6,13 +6,13 @@
 > f.writelines(list_of_lines)
 
 '''
-f = open('abcd.txt','w')
+f = open('RESOURCES/abcd.txt','w')
 f.write('durga\n')
 f.write('Software\n')
 f.write('Solution\n')
 print("Data Written")
 
-f = open('abcde.txt','w')
+f = open('RESOURCES/abcde.txt','w')
 list = ['sunny\n','bunny\n','chinny\n']
 f.writelines(list)
 print("Data written")
