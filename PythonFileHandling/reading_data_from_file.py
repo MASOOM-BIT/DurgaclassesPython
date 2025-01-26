@@ -9,21 +9,21 @@
 > readlines(): Reads all lines in a file and returns them as a list.
 '''
 # Example 1:
-f=open('abc.txt','r')
+f=open('RESOURCES/abc.txt','r')
 data = f.read()
 print(type(data))
 print(data)
 
 print('-----------------------------------------------------------------------------')
 #Example 2:
-f=open('abc.txt','r')
+f=open('RESOURCES/abc.txt','r')
 data = f.read(30)
 print(data)
 f.close()
 print('-----------------------------------------------------------------------------')
 
 # Example 3:
-f=open("abc.txt",'r')
+f=open("RESOURCES/abc.txt",'r')
 print(f.readline())
 print(f.readline())
 print(f.readline())
@@ -31,7 +31,7 @@ f.close()
 print('-----------------------------------------------------------------------------')
 
 #Example 4:
-f=open('abcd.txt','r')
+f=open('RESOURCES/abcd.txt','r')
 list1=f.readlines()
 print(list1)
 for line in list1:
