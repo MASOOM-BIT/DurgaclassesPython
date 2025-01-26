@@ -2,7 +2,7 @@ import logging
 
 #If i want inform and debug message
 
-logging.basicConfig(filename='log2.txt',level=logging.DEBUG)
+logging.basicConfig(filename='RESOURCES/log2.txt',level=logging.DEBUG)
 print("Logging demo ..")
 
 logging.debug("Dubug Message")
