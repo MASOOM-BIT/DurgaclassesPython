@@ -2,7 +2,7 @@ import logging
 #To include timestamp in logging file
 
 logging.basicConfig(
-    filename='log1.txt',
+    filename='RESOURCES/log1.txt',
     level=logging.WARNING,
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
