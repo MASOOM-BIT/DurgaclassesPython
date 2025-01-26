@@ -1,0 +1,4 @@
+Line 1: Hello, World!
+Line 2: Python is awesome.
+Line 3: This is an example text.
+Line 4: Have a great day!
