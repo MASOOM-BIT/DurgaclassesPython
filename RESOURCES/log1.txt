@@ -1,0 +1,3 @@
+2025-01-23 01:38:33 - WARNING - Warning message
+2025-01-23 01:38:33 - ERROR - Error Message
+2025-01-23 01:38:33 - CRITICAL - Critical message
