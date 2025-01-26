@@ -1,0 +1,4 @@
+file_path = '/c:/Users/HP/PycharmProjects/DurgaclassesPython/RESOURCES/file_methods.txt'
+
+with open(file_path, 'a') as file:
+    file.write('\nSome more text')
