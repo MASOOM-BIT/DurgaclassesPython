@@ -1,0 +1,32 @@
+>>> Writing CSV Files
+> To write data into a CSV file in Python, you typically use the csv module, which provides two main classes: csv.writer and csv.DictWriter.
+> Using csv.writer
+> Open the File: Use the open() function with write mode ('w').
+> Create a Writer Object: Instantiate a writer object using csv.writer().
+>>> Write Data:
+> Use writerow() to write a single row.
+> Use writerows() to write multiple rows at once.
+
+>>> Using csv.DictWriter
+> This class is useful for writing dictionaries to CSV files, where keys represent column headers.
+> Open the File: Similar to csv.writer, open the file in write mode.
+> Create a DictWriter Object: Pass the file object and a list of fieldnames to csv.DictWriter().
+>>> Write Header and Rows:
+> Use writeheader() to write the header.
+> Use writerows() to write multiple rows of dictionaries.
+
+>>> Reading CSV Files
+> To read data from a CSV file, you can also use the csv module with either csv.reader or csv.DictReader.
+> Using csv.reader
+> Open the File: Use the open() function with read mode ('r').
+> Create a Reader Object: Instantiate a reader object using csv.reader().
+> Read Data: Iterate over the reader object to access each row.
+
+>>> Using csv.DictReader
+> This class reads rows into dictionaries, where keys are derived from the first row (header).
+> Open the File: Open the file in read mode.
+> Create a DictReader Object: Pass the file object to csv.DictReader().
+> Read Data: Iterate through the DictReader object to access each row as a dictionary.
+
+>>> Conclusion
+> Using Python's built-in csv module makes it straightforward to read from and write to CSV files. The choice between using csv.writer and csv.DictWriter depends on whether your data is structured as lists or dictionaries. This flexibility allows for easy manipulation of tabular data in various applications.
