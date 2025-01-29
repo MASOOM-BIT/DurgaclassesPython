@@ -1,0 +1,19 @@
+import random
+import string
+
+# Function to generate random text
+def generate_random_text(length):
+    letters = string.ascii_letters + string.digits + string.punctuation
+    return ''.join(random.choice(letters) for i in range(length))
+
+# Generate random text of length 100
+random_text = generate_random_text(100)
+
+# Path to the file
+file_path = '/c:/Users/HP/PycharmProjects/DurgaclassesPython/RESOURCES/zipfile2.txt'
+
+# Write the random text to the file
+with open(file_path, 'w') as file:
+    file.write(random_text)
+
+print(f"Random text written to {file_path}")
