@@ -1,0 +1,8 @@
+import os
+
+file_path = '/c:/Users/HP/PycharmProjects/DurgaclassesPython/RESOURCES/Zipfile3.txt'
+
+if os.path.isfile(file_path):
+    print(f"File found: {file_path}")
+else:
+    print(f"File not found: {file_path}")
