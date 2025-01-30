@@ -1,0 +1,16 @@
+>>> Pickling and unpickling are essential processes in Python for serializing and deserializing objects, allowing for the storage and transmission of Python data structures.
+>>> What is Pickling?
+> Process of saving/write state of objects into a file is called pickling
+> Pickling is the process of converting a Python object into a byte stream. This serialized format allows the object to be saved to a file or transmitted over a network. The pickle module provides the functionality to perform this operation. The main function used for pickling is pickle.dump(), which writes the serialized object to a file in binary mode ('wb').
+
+>>> What is Unpickling?
+> The process of reading state of objects from the file called Unpickling
+> Unpickling is the reverse process, where a byte stream is converted back into the original Python object. This process uses the pickle.load() function, which reads from a file in binary mode ('rb') and reconstructs the object.
+
+>>> Key Functions
+>>> Pickling Functions:
+> pickle.dump(obj, file): Serializes obj and writes it to file.
+> pickle.dumps(obj): Serializes obj and returns it as a byte string.
+>>> Unpickling Functions:
+> pickle.load(file): Reads from file and reconstructs the original object.
+> pickle.loads(byte_string): Deserializes byte_string back into an object.
