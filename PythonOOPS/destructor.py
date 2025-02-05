@@ -10,6 +10,7 @@ __del__(self):
 > the job of destructor is to perform cleanup cactivities just before destroying an object
 > destroctor never destroy object 'gc' do
 '''
+# Example 1
 import time
 class Test:
     def __init__(self):
@@ -21,3 +22,15 @@ t1=Test()
 t1=None #Now eligible for gc
 time.sleep(5)
 print('End of Application')
+
+# Example 2
+class Test:
+    def __init__(self):
+        print('Constructor Executed')
+    def __del__(self):
+        print('Deconstructor Executed')
+
+t1=Test()
+del t1
+time.sleep(5)
+print('End')
