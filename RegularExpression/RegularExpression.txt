@@ -1,0 +1,6 @@
+>>> Regular expressions
+> Regular expressions (regexes) are special sequences of characters that define a search pattern.
+> They are used to match, locate, and manipulate text based on these patterns.
+> Regular expressions are essentially a tiny, highly specialized programming language embedded inside Python and made available through the re module. 
+> This module provides support for regular expressions in Python.
+> The Python re module offers functions to work with regular expressions
