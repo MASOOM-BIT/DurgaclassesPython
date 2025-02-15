@@ -1,3 +1,4 @@
+#To understand simple working of multiple thread
 from threading import *
 def display():
     for i in range(10):
