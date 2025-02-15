@@ -1,25 +1,25 @@
 Sure, here is a detailed introduction to multi-threading in Python.
 
-## Introduction to Multi-threading in Python
+>>> Introduction to Multi-threading in Python
 
 Multi-threading in Python allows you to run multiple threads (smaller units of a process) concurrently, which can help in improving the performance of your applications, especially those that are I/O-bound. Python's standard library includes a module called `threading` which provides a way to spawn new threads and manage them.
 
-### Why Use Multi-threading?
+>>> Why Use Multi-threading?
 
 1. **Concurrency**: Multi-threading allows you to perform multiple operations at the same time.
 2. **Responsiveness**: In GUI applications, multi-threading can keep the interface responsive while performing background tasks.
 3. **Resource Sharing**: Threads share the same memory space, which makes data sharing easier.
 
-### The `threading` Module
+>>> The `threading` Module
 
 The `threading` module in Python provides a way to create and manage threads. Here's an overview of some of the key components:
 
-- **Thread Class**: The `Thread` class is used to create a new thread.
-- **Lock Class**: The `Lock` class is used to handle thread synchronization.
-- **Event Class**: The `Event` class is used for thread communication.
-- **Semaphore Class**: The `Semaphore` class is used to control access to a resource.
+-> **Thread Class**: The `Thread` class is used to create a new thread.
+-> **Lock Class**: The `Lock` class is used to handle thread synchronization.
+-> **Event Class**: The `Event` class is used for thread communication.
+-> **Semaphore Class**: The `Semaphore` class is used to control access to a resource.
 
-### Creating and Starting a Thread
+>>> Creating and Starting a Thread
 
 To create and start a thread, you need to define a function that will be executed by the thread and then create a `Thread` object.
 
@@ -37,7 +37,7 @@ thread = threading.Thread(target=print_numbers)
 thread.start()
 ```
 
-### Using a Thread Subclass
+>>> Using a Thread Subclass
 
 You can also create a thread by subclassing the `Thread` class and overriding the `run` method.
 
@@ -56,7 +56,7 @@ thread = MyThread()
 thread.start()
 ```
 
-### Synchronization with Locks
+>>> Synchronization with Locks
 
 When multiple threads modify shared data, it can lead to race conditions. To prevent this, you can use locks.
 
@@ -85,7 +85,7 @@ thread2.join()
 print(counter)  # Should be 200000
 ```
 
-### Thread Communication with Events
+>>> Thread Communication with Events
 
 Threads can communicate with each other using events.
 
@@ -112,7 +112,7 @@ thread1.join()
 thread2.join()
 ```
 
-### Using Semaphores
+>>> Using Semaphores
 
 A semaphore is a synchronization primitive that can be used to control access to a resource.
 
@@ -139,11 +139,11 @@ thread2.join()
 thread3.join()
 ```
 
-### Limitations of Multi-threading in Python
+>>> Limitations of Multi-threading in Python
 
 Python has a Global Interpreter Lock (GIL) that allows only one thread to execute Python bytecode at a time. This means that multi-threading in Python does not achieve true parallelism for CPU-bound tasks. For CPU-bound tasks, you may want to use the `multiprocessing` module instead.
 
-### Conclusion
+>>> Conclusion
 
 Multi-threading in Python is a powerful tool for improving the performance of I/O-bound applications. The `threading` module provides a simple and efficient way to create and manage threads. However, due to the GIL, it may not be suitable for CPU-bound tasks. For such tasks, consider using the `multiprocessing` module.
 
