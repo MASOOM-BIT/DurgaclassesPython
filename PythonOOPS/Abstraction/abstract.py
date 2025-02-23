@@ -5,4 +5,4 @@ class DBInterface(ABC):
         pass
     @abstractmethod
     def disconnect(self):
-        pass
+        pass 
