@@ -139,11 +139,11 @@ thread2.join()
 thread3.join()
 ```
 
->>> Limitations of Multi-threading in Python
+>>>Limitations of Multi-threading in Python
 
 Python has a Global Interpreter Lock (GIL) that allows only one thread to execute Python bytecode at a time. This means that multi-threading in Python does not achieve true parallelism for CPU-bound tasks. For CPU-bound tasks, you may want to use the `multiprocessing` module instead.
 
->>> Conclusion
+>>>Conclusion
 
 Multi-threading in Python is a powerful tool for improving the performance of I/O-bound applications. The `threading` module provides a simple and efficient way to create and manage threads. However, due to the GIL, it may not be suitable for CPU-bound tasks. For such tasks, consider using the `multiprocessing` module.
 
