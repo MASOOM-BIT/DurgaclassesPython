@@ -2,10 +2,21 @@
     "editor.fontSize": 18,
     "cSpell.words": [
         "columnspan",
+        "executemany",
+        "executeprocedure",
+        "executescript",
+        "fetchall",
+        "fetchmany",
+        "fetchone",
         "offvalue",
         "onvalue",
         "padx",
         "pady",
-        "selectcolor"
+        "psycopg",
+        "pymysql",
+        "pyodbc",
+        "sakila",
+        "selectcolor",
+        "sqlalchemy"
     ]
 }
