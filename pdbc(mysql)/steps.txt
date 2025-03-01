@@ -1,0 +1,50 @@
+>>> standard steps for database Programming
+1. import the mysql.connector module
+import mysql.connector
+import cx_Oracle
+import pymysql
+import sqlite3
+import psycopg2
+import sqlalchemy
+import pyodbc
+import postgresql
+
+2.Establish the connection to the database
+my_conn=mysql.connector.connect(host="localhost",user="root",password="",database="mydatabase")
+
+3.Create a cursor object
+my_cursor=my_conn.cursor()
+
+4.Execute the query
+my_cursor.execute("select * from my_table")
+
+#execute(sql_query) :Single SQL query
+#executescript(sql_query) :Multiple SQL query separated by semicolon
+#executemany(sql_query,data) :Multiple SQL query with multiple parameters
+#executeprocedure(procedure_name,parameters) :Procedure call
+
+commit() :Commit the transaction
+rollback() :Rollback the transaction
+
+
+5.Fetch the data
+my_result=my_cursor.fetchall()
+
+fetchone() :Fetch one row
+fetchmany(n) :Fetch n rows
+fetchall() :Fetch all rows
+
+6.Close the connection
+my_conn.close()
+
+
+
+
+
+
+
+
+
+
+
+
